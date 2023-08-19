@@ -1,286 +1,371 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Umeed Welfare Organization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+        }
+        .welcome-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+        }
+        p {
+            color: #666666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-box">
+        <h1>Welcome to Umeed Welfare Organization</h1>
+        <p>Empowering lives, one step at a time</p>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umeed Welfare Organization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Reset some default styles */
-        body, h1, h2, p {
+        body {
+            background-image: url('background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
-        }
-
-        /* Set a background image */
-        body {
             font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); /* Use the filename of your background image */
+        }
+        /* Rest of your styles */
+
+        .section img {
+            max-width: 100%; /* Ensure the logo fits within the section */
+            animation: rotate360 15s linear infinite; /* 4s rotation duration */
+        }
+
+        @keyframes rotate360 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your loading animation, contact icons, and content sections -->
+
+    <div class="section">
+        <img src="your-official-logo.png" alt="Umeed Welfare Organization"> <!-- Replace with your official logo URL -->
+        <h1 class="animation-style">Introduction</h1>
+
+        <h2 class="animation-style">Who we are & What we do?</h2>
+        <p>Welcome to Umeed Welfare Organization, located in Charsadda! At Umeed, we are dedicated to making a positive impact on the lives of our community members. Through our multifaceted approach, we strive to uplift those in need by providing financial assistance, educational support, and essential medical care.
+
+Financial support is at the heart of our mission, as we believe in enabling individuals to overcome financial hurdles and create a better future. We also believe that education is a key pathway to success, and we are committed to ensuring that talented students from less privileged backgrounds receive the educational resources they need. By providing books and stationary to these students, we aim to empower them to reach their full potential.
+
+Recognizing the importance of health and well-being, we extend our helping hand to offer medical facilities to those who may struggle with the costs of medical tests and medications. Through this initiative, we aim to improve the quality of life for those who are less fortunate and in need of essential medical care.
+
+At Umeed Welfare Organization, we believe that every small action can create a big impact. By joining hands with us, you become part of a community that is dedicated to creating positive change, fostering hope, and building a brighter future for all. Together, we can make a difference that matters.</p>
+    </div>
+
+    <!-- Your script for animations and interactions -->
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umeed Welfare Organization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('background-image.jpg');
             background-size: cover;
-            background-position: center;
-            color: #fff;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-
-        /* Loading animation */
-        .loading {
-            animation: spin 1s infinite linear;
+        .loading-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
         }
-
+        .loading-spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+        }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
-        /* Logo animation */
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 150px;
-            animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation */
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the header section */
-        header {
-            background-color: #333;
+        .contact-icons a {
+            margin: 0 10px;
             color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the main content */
-        main {
-            padding: 2em;
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the footer */
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-        }
-
-        /* Add styles for the official logo */
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 150px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="official_logo.png" alt="Umeed Logo" class="logo">
-        <h1>Welcome to Umeed Welfare Organization</h1>
-        <p>A non-profit organization dedicated to helping people in need.</p>
-    </header>
-
-    <!-- Rest of your HTML content... -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us</title>
-    <style>
-        .whatsapp-icon {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            padding: 10px;
-            border-radius: 50%;
-            font-size: 20px;
-            text-align: center;
             text-decoration: none;
+            font-size: 20px;
+        }
+        .section {
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .animation-style {
+            animation: fadeUp 1s ease-out;
+            opacity: 0;
+        }
+        @keyframes fadeUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <p>Contact us on WhatsApp:</p>
-    <a class="whatsapp-icon" href="https://wa.me/+923258692801">WhatsApp</a>
-</body>
-</html>
-    <footer>
-        <p>&copy; 2023 Umeed Welfare Organization. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-    </style>
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div class="contact-icons">
+        <a href="https://wa.me/+923258692801"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:umeed@duck.com"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <div class="section">
+        <img src="official-logo.png" alt="Umeed Welfare Organization" style="max-width: 200px;">
+        <h1 class="animation-style">Introduction</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis eros ut massa gravida, id efficitur nisi eleifend.</p>
+    </div>
+
+    <div class="section">
+        <h1 class="animation-style">About Us</h1>
+        <p>Umeed Welfare Organization is a compassionate non-profit dedicated to making a positive impact in the lives of individuals and communities. With a strong commitment to upliftment, Umeed strives to provide essential resources, support, and opportunities to those in need. Through a wide range of initiatives, Umeed empowers people to overcome challenges, fostering hope and transformation for a brighter future.</p>
+    </div>
+
+    <div class="section">
+        <h1 class="animation-style">Donate</h1>
+        <p>You have the option to support Umeed Welfare Organization in multiple ways. You can donate through Easy Paisa and Jazz Cash for a streamlined process, or you can choose to provide help directly to those in need. Your generosity, whether through digital platforms or in-person assistance, will contribute towards Umeed's mission of making a positive impact in the lives of individuals and communities.</p>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to Umeed Welfare Organization</h1>
-        <p>A non-profit organization dedicated to helping people in need.</p>
-    </header>
+    <!-- Loading animation and contact icons -->
+    <!-- Your content sections here -->
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#mission">Our Mission</a>
-        <a href="#get-involved">Get Involved</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+    <div class="section">
+        <h1 class="animation-style">Donate RS 100</h1>
+        <p>Donating to a cause like Umeed Welfare Organization can be incredibly motivating. Your donation has the power to bring about positive change, improve lives, and create a ripple effect of kindness. By contributing, you become a part of a collective effort to address critical needs, offer support, and uplift those who are less fortunate. Your generosity can inspire others to join in, fostering a sense of unity and compassion within the community. Remember, even a small donation can make a significant difference and contribute to creating a better world for everyone..</p>
+        <p>Choose a payment method:</p>
+        <a href="jazzcash://sendmoney?amount=100&recip=03195127567">Donate via JazzCash</a>
+        <a href="easypaisa://03258692801/100">Donate via Easypaisa</a>
+    </div>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Umeed Welfare Organization, a beacon of hope and support for those in need. At Umeed, we are committed to making a positive impact on the lives of individuals by providing a helping hand and fostering a sense of community. Our organization is dedicated to empowering people through various initiatives, ranging from education and healthcare to livelihood opportunities.
+    <!-- Your script for animations and interactions -->
 
-With a passionate team of volunteers and professionals, we strive to create a better tomorrow for the underserved and marginalized. Our website serves as a window into the diverse range of programs we offer, each designed to uplift and transform lives. Explore our projects that span across education, healthcare, skill development, and more, all aimed at addressing the core challenges faced by the communities we serve.
-
-As you navigate through our website, you'll discover heartwarming success stories of individuals whose lives have been positively impacted by Umeed's interventions. By fostering a sense of hope and instilling confidence, we believe in equipping individuals with the tools they need to break the cycle of poverty and create a brighter future.
-
-Join hands with Umeed Welfare Organization in our mission to spread compassion, inspire change, and create a society where everyone has the opportunity to thrive. Your support, whether through donations, volunteering, or simply spreading awareness, plays a crucial role in turning aspirations into reality. Together, let's build a world where hope knows no bounds..</p>
-        </section>
-
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>Our Mission:
-At Umeed Welfare Organization, our mission is to uplift and empower individuals in need, fostering positive change within communities and beyond. Through a dedicated commitment to education, healthcare, skill development, and community engagement, we aim to provide a pathway towards a brighter future for those who often lack access to essential resources and opportunities.
-
-Guided by the principles of compassion, equality, and sustainable development, we endeavor to break down barriers that hinder progress and hinder the potential of individuals. Our mission is not only to provide immediate relief but also to create lasting transformations that enable individuals to lead self-sufficient, dignified lives.
-
-By collaborating with local partners, volunteers, and supporters, we seek to create a network of support that amplifies the impact of our efforts. Our ultimate goal is to nurture a society where everyone has the chance to thrive, regardless of their circumstances. With every initiative we undertake and every life we touch, we strive to embody the spirit of hope and resilience that defines Umeed Welfare Organization..</p>
-        </section>
-
-        <section id="Be a Hope , Donate">
-            <h2>Get Involved</h2>
-            <p>Thank you for your generosity and willingness to support Umeed Welfare Organization. Your contributions will make a meaningful difference in the lives of those we serve. You can donate conveniently through Jazz Cash at 03195127567 or Easy Paisa at 0325 8692801. Alternatively, if you prefer, you can also contribute in person. Your support is invaluable and greatly appreciated. Together, we can continue to bring positive change to our communities..</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us ... Feel free to get in touch.</h2>
-            <p>Feel free to reach out to us at <a href="mailto:umeed@duck.com">umeed@duck.com</a>.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Umeed Welfare Organization. All rights reserved.</p>
-    </footer>
 </body>
 </html>
 
+    <div class="section">
+        <h1 class="animation-style">Membership</h1>
+        <p>Becoming a member of Umeed Welfare Organization is a meaningful way to engage with their mission and make a lasting impact. As a member, you'll have the opportunity to actively participate in their initiatives, events, and projects that aim to uplift communities and individuals in need. Membership often includes benefits such as staying updated on Umeed's work, attending special events, and collaborating with like-minded individuals who share a commitment to making a difference. Your involvement as a member can amplify the organization's efforts and contribute to positive change on a larger scale.</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var loadingAnimation = document.querySelector('.loading-animation');
+            loadingAnimation.style.display = 'none';
+            
+            var animatedSections = document.querySelectorAll('.animation-style');
+            animatedSections.forEach(function(section) {
+                section.style.opacity = '1';
+            });
+        }
+    </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umeed Welfare Organization</title>
-    <!-- Include Font Awesome stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Reset some default styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
+        /* Your existing styles here */
+
+        .section img {
+            max-width: 100%; /* Ensure the logo fits within the section */
+            animation: rotate360 4s linear infinite; /* 4s rotation duration */
         }
 
-        /* Set a background image */
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); /* Use the filename of your background image */
-            background-size: cover;
-            background-position: center;
-            color: #fff;
+        .help-icon {
+            font-size: 40px;
+            color: #3498db;
+            margin-top: 20px;
+            cursor: pointer;
         }
 
-        /* Loading animation */
-        .loading {
-            animation: spin 1s infinite linear;
-        }
+        /* Rest of your styles */
 
-        /* Logo animation */
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 150px;
-            animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation */
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the header section */
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the main content */
-        main {
-            padding: 2em;
-        }
-
-        /* Rest of your CSS styles... */
-
-        /* Style the footer */
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-        }
-
-        /* Add styles for the official logo */
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 150px;
-        }
-
-        /* Style the donation links */
-        .donation-link {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-right: 10px;
-            text-decoration: none;
+        @keyframes rotate360 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="official_logo.png" alt="Umeed Logo" class="logo">
-        <h1>Welcome to Umeed Welfare Organization</h1>
-        <p>A non-profit organization dedicated to helping people in need.</p>
-    </header>
+    <!-- Your loading animation, contact icons, and content sections -->
 
-    <nav>
-        <!-- ... your navigation content ... -->
-    </nav>
+    <div class="section">
+        <img src="your-official-logo.png" alt="Umeed Welfare Organization"> <!-- Replace with your official logo URL -->
+        <h1 class="animation-style">Introduction</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis eros ut massa gravida, id efficitur nisi eleifend.</p>
+    </div>
 
-    <main>
-        <section id="Be a Hope , Donate">
-            <h2>Get Involved</h2>
-            <p>Thank you for your generosity and willingness to support Umeed Welfare Organization. Your contributions will make a meaningful difference in the lives of those we serve.</p>
-            <p>You can donate conveniently through:</p>
-            <a href="https://wa.me/+923258692801" class="donation-link"><i class="fab fa-whatsapp"></i> WhatsApp Donation</a>
-            <a href="https://easypaisa.com.pk/" class="donation-link"><i class="fas fa-money-bill"></i> Easy Paisa Donation</a>
-            <p>Alternatively, you can also contribute in person. Your support is invaluable and greatly appreciated. Together, we can continue to bring positive change to our communities.</p>
-        </section>
-        <!-- ... your other sections ... -->
-    </main>
+    <div class="section">
+        <h1 class="animation-style">Register for Help</h1>
+        <p>If you need assistance, please register using the following form:</p>
+        <a href="https://docs.google.com/forms/your-form-link" target="_blank">
+            <i class="fas fa-hands-helping help-icon"></i>
+        </a>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Umeed Welfare Organization. All rights reserved.</p>
-    </footer>
+    <!-- Your script for animations and interactions -->
+
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <!-- Loading animation and contact icons -->
 
+    <!-- Your content sections here -->
 
+    <!-- Register for Help section -->
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="your-official-logo.png" alt="Umeed Welfare Organization">
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Donate</a>
+                <a href="#">Membership</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copy-right">© 2023 Umeed Welfare Organization. All rights reserved.</p>
+    </footer>
 
+    <!-- Your script for animations and interactions -->
+/* Rest of your styles */
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #3498db; /* Highlight color on hover */
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #3498db; /* Highlight color on hover */
+}
+
+.copy-right {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Rest of your styles */
+
+</body>
+</html>
