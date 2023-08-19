@@ -11,11 +11,39 @@
             padding: 0;
         }
 
-        /* Set a background color and font styles */
+        /* Set a background image */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('background.jpg'); /* Use the filename of your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
         }
+
+        /* Loading animation */
+        .loading {
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Logo animation */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Rest of your CSS styles... */
 
         /* Style the header section */
         header {
@@ -25,39 +53,66 @@
             padding: 1em;
         }
 
-        /* Style the navigation bar */
-        nav {
-            background-color: #555;
-            padding: 0.5em;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-        }
+        /* Rest of your CSS styles... */
 
         /* Style the main content */
         main {
             padding: 2em;
         }
 
-        section {
-            margin-bottom: 2em;
-        }
-
-        h2 {
-            color: #333;
-        }
+        /* Rest of your CSS styles... */
 
         /* Style the footer */
         footer {
             text-align: center;
             padding: 1em;
-            background-color: #555;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
         }
+
+        /* Add styles for the official logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="official_logo.png" alt="Umeed Logo" class="logo">
+        <h1>Welcome to Umeed Welfare Organization</h1>
+        <p>A non-profit organization dedicated to helping people in need.</p>
+    </header>
+
+    <!-- Rest of your HTML content... -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        .whatsapp-icon {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Contact us on WhatsApp:</p>
+    <a class="whatsapp-icon" href="https://wa.me/+923258692801">WhatsApp</a>
+</body>
+</html>
+    <footer>
+        <p>&copy; 2023 Umeed Welfare Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>
     </style>
 </head>
 <body>
@@ -112,29 +167,119 @@ By collaborating with local partners, volunteers, and supporters, we seek to cre
 </body>
 </html>
 
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umeed Welfare Organization</title>
+    <!-- Include Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        .whatsapp-icon {
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background image */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Use the filename of your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        /* Loading animation */
+        .loading {
+            animation: spin 1s infinite linear;
+        }
+
+        /* Logo animation */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            animation: fadeIn 2s ease-in-out; /* Add a fadeIn animation */
+        }
+
+        /* Rest of your CSS styles... */
+
+        /* Style the header section */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        /* Rest of your CSS styles... */
+
+        /* Style the main content */
+        main {
+            padding: 2em;
+        }
+
+        /* Rest of your CSS styles... */
+
+        /* Style the footer */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        /* Add styles for the official logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+
+        /* Style the donation links */
+        .donation-link {
             display: inline-block;
             background-color: #25D366;
             color: white;
             padding: 10px;
-            border-radius: 50%;
-            font-size: 20px;
-            text-align: center;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <p>Contact us on WhatsApp:</p>
-    <a class="whatsapp-icon" href="https://wa.me/+923258692801">WhatsApp</a>
+    <header>
+        <img src="official_logo.png" alt="Umeed Logo" class="logo">
+        <h1>Welcome to Umeed Welfare Organization</h1>
+        <p>A non-profit organization dedicated to helping people in need.</p>
+    </header>
+
+    <nav>
+        <!-- ... your navigation content ... -->
+    </nav>
+
+    <main>
+        <section id="Be a Hope , Donate">
+            <h2>Get Involved</h2>
+            <p>Thank you for your generosity and willingness to support Umeed Welfare Organization. Your contributions will make a meaningful difference in the lives of those we serve.</p>
+            <p>You can donate conveniently through:</p>
+            <a href="https://wa.me/+923258692801" class="donation-link"><i class="fab fa-whatsapp"></i> WhatsApp Donation</a>
+            <a href="https://easypaisa.com.pk/" class="donation-link"><i class="fas fa-money-bill"></i> Easy Paisa Donation</a>
+            <p>Alternatively, you can also contribute in person. Your support is invaluable and greatly appreciated. Together, we can continue to bring positive change to our communities.</p>
+        </section>
+        <!-- ... your other sections ... -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Umeed Welfare Organization. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
 
 
 
