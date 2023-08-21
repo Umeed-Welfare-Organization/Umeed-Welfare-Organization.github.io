@@ -1,0 +1,167 @@
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jet {
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-100%);
+    animation: jetAnimation 10s linear infinite;
+}
+
+@keyframes jetAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.jet img {
+    height: 100px;
+    width: auto;
+}
+
+.smoke {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0.7;
+    transform: translateX(-100%);
+    animation: smokeAnimation 10s linear infinite;
+}
+
+@keyframes smokeAnimation {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.typing-effect .message {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange; /* Typing cursor */
+    margin: 0;
+    letter-spacing: .15em;
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+
+
+
+
+
+
+
+
+
+/* Add this code to your existing CSS file or create a new one */
+
+/* Logo rotation animation */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply rotation to your logo */
+header img {
+    animation: rotate360 10s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87CEFA, #1E90FF);
+}
+
+.flower {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF69B4;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fall 10s linear infinite, rotate 3s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
